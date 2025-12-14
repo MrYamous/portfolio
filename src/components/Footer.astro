@@ -1,0 +1,49 @@
+---
+import { GithubIcon, LinkedinIcon, MailIcon } from "./icons/index.astro";
+---
+
+<footer class="border-t border-slate-700 bg-slate-900">
+  <div
+    class="
+      max-w-6xl mx-auto px-6 py-12
+      grid gap-8 sm:grid-cols-2
+    "
+  >
+    <div>
+      <p class="text-slate-200 font-medium">
+        Matthieu Lempereur
+      </p>
+      <p class="text-sm text-slate-400 mt-1">
+        Développeur back-end — Contributeur open source.
+      </p>
+    </div>
+
+    <div class="flex gap-6 sm:justify-end items-center">
+      <a
+        href="https://github.com/MrYamous"
+        target="_blank"
+        aria-label="GitHub"
+        class="text-slate-400 hover:text-white transition-colors"
+      >
+        <GithubIcon />
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/matthieu-lempereur/"
+        target="_blank"
+        aria-label="LinkedIn"
+        class="text-slate-400 hover:text-blue-400 transition-colors"
+      >
+        <LinkedinIcon />
+      </a>
+
+      <a
+        href="mailto:matt.lempereur@gmail.com"
+        aria-label="Contact"
+        class="text-slate-400 hover:text-violet-400 transition-colors"
+      >
+        <MailIcon />
+      </a>
+    </div>
+  </div>
+</footer>

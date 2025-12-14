@@ -1,0 +1,101 @@
+---
+import { GithubIcon, ExternalLinkIcon } from "./icons/index.astro";
+
+const { project } = Astro.props;
+
+const typeStyles = {
+  Professionnel: {
+    accent: "from-blue-500 to-cyan-500",
+    label: "text-cyan-400"
+  },
+  Personnel: {
+    accent: "from-violet-500 to-fuchsia-500",
+    label: "text-violet-400"
+  },
+  OSS: {
+    accent: "from-emerald-500 to-teal-500",
+    label: "text-emerald-400"
+  },
+  Conférence: {
+    accent: "from-slate-500 to-zinc-500",
+    label: "text-slate-400"
+  }
+};
+
+const styles = typeStyles[project.type] ?? typeStyles.Personnel;
+---
+<article
+  class="
+    relative
+    rounded-xl
+    bg-slate-800
+    p-5
+    border
+    border-slate-700
+  "
+>
+  <div
+    class={`
+      absolute left-0 top-0 h-full w-1 rounded-l-xl
+      bg-linear-to-b ${styles.accent}
+    `}
+  ></div>
+
+  <div class="pl-4">
+    <header class="flex justify-between items-start">
+      <h2 class="text-lg font-semibold text-slate-100">
+        {project.title}
+      </h2>
+
+      <span
+        class={`
+          text-xs uppercase tracking-wide font-medium
+          ${styles.label}
+        `}
+      >
+        {project.type}
+      </span>
+    </header>
+
+    <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+      {project.description}
+    </p>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      {project.stack.map(tech => (
+        <span
+          class="
+            text-xs px-2 py-1 rounded-md
+            bg-slate-700 text-slate-300
+          "
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+
+    <div class="flex gap-4 mt-5">
+      {project.github && (
+        <a
+          href={project.github}
+          target="_blank"
+          class="text-slate-400 hover:text-white"
+          aria-label="Voir le code sur GitHub"
+        >
+          <GithubIcon />
+        </a>
+      )}
+
+      {project.url && (
+        <a
+          href={project.url}
+          target="_blank"
+          class="text-slate-400 hover:text-white"
+          aria-label="Voir le projet"
+        >
+          <ExternalLinkIcon />
+        </a>
+      )}
+    </div>
+  </div>
+</article>

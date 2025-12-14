@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Livewire-powergrid",
+    "description": "Contributions au projet Livewire Powergrid, un composant de tableau de données pour Laravel Livewire.",
+    "stack": ["PHP", "Laravel", "Livewire"],
+    "type": "OSS",
+    "github": "https://github.com/Power-Components/livewire-powergrid",
+    "url": "https://livewire-powergrid.com/"
+  },
+  {
+    "title": "Symfony Cheatsheet",
+    "description": "Site statique généré à partir de données JSON pour référencer les commandes Symfony.",
+    "stack": ["Astro", "Symfony", "JSON"],
+    "type": "Personnel",
+    "github": "https://github.com/mryamous/sf-console",
+    "url": "https://mryamous.github.io/sf-console/"
+  },
+  {
+    "title": "Moussaka",
+    "description": "Conception et développement d'une API pour un outil de gestion des entretiens annuels et du suivi des compétences.",
+    "stack": ["PHP", "Symfony", "Doctrine", "API"],
+    "type": "Professionnel",
+    "github": null,
+    "url": null
+  },
+  {
+    "title": "doctor-rst",
+    "description": "Contributions à ce projet dédié à la validation et au formatage de documentation au format reStructuredText.",
+    "stack": ["PHP"],
+    "type": "OSS",
+    "github": "https://github.com/OskarStark/doctor-rst",
+    "url": null
+  },
+  {
+    "title": "Symfony",
+    "description": "Contributions au code et à la documentation du framework Symfony.",
+    "stack": ["PHP", "Symfony"],
+    "type": "OSS",
+    "github": "https://github.com/symfony/symfony",
+    "url": "https://symfony.com/doc"
+  },
+  {
+    "title": "DevFest Strasbourg 2024",
+    "description": "Talk « Craft, TDD, DDD... faut-il culpabiliser de ne pas en faire » présenté lors du DevFest Strasbourg 2024.",
+    "stack": [],
+    "type": "Conférence",
+    "github": null,
+    "url": "https://devfest24.gdgstrasbourg.fr/"
+  },
+  {
+    "title": "Iris",
+    "description": "Développement d'un outil pour l'inventaire du matériel informatique de l'entreprise mis à diposition pour le télétravail.",
+    "stack": ["PHP", "Laravel", "Livewire", "API"],
+    "type": "Professionnel",
+    "github": null,
+    "url": null
+  }
+]
