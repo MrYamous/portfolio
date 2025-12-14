@@ -25,14 +25,15 @@ const typeStyles = {
 const styles = typeStyles[project.type] ?? typeStyles.Personnel;
 ---
 <article
-  class="
+  class={`
     relative
     rounded-xl
     bg-slate-800
     p-5
-    border
-    border-slate-700
-  "
+    border border-slate-700
+    transition-transform duration-300
+    hover:scale-105 hover:shadow-2xl
+  `}
 >
   <div
     class={`
